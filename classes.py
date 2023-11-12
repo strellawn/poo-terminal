@@ -179,3 +179,12 @@ class Chave:
         for i, disputa in enumerate(self.chaveamento, start=1):
             turma1, turma2 = disputa
             print(f"Disputa {i}: {turma1} x {turma2}")
+
+class Partida:
+    def __init__(self, horario, times):
+        self.horario = ""
+        self.times = times
+
+    def exibir_partida(self):
+        print(f"Partida: {self.times[0]} vs {self.times[1]}")
+        print(f"Horário: {self.horario}")
